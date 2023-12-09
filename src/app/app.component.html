@@ -15,9 +15,6 @@
       <div class="nav-options2">
         <div class="nav-des" id="welcome-message" *ngIf="user_type_name != ''">Welcome, <span
             class="role-display">{{user_type_name}}</span></div>
-        <button class="nav-op2" [routerLink]="['/loginMain']" *ngIf="!log()">Login</button>
-        <button class="nav-op2" [routerLink]="['/registerMain']" *ngIf="!log()">Register</button>
-        <button class="nav-op2" *ngIf="log()" (click)="logout()">Logout</button>
         <!-- <div class="nav-op2"  [routerLink]="['/loginMain']" *ngIf="!auth.LoggedIn()">Login</div>
         <div class="nav-op2" [routerLink]="['/register']"  *ngIf="!auth.LoggedIn()">Logout</div>
         <div class="nav-op2" *ngIf="auth.LoggedIn()" (click)="auth.logout()">Logout</div> -->
@@ -26,7 +23,7 @@
   </div>
 
 
-  <div class="nav-options">
+  <!-- <div class="nav-options">
     <div class="nav-op" routerLink="/Minor" [routerLinkActive]="['selected-option']">
       ISA Analysis</div>
     <div class="nav-op" routerLink="/Endsem" [routerLinkActive]="['selected-option']">
@@ -42,7 +39,7 @@
     <div class="nav-op" routerLink="/makeup" [routerLinkActive]="['selected-option']">
       Makeup Minor</div>
 
-  </div>
+  </div> -->
 </div>
 
 <div class="wrapper">

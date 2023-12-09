@@ -106,14 +106,20 @@ import { GuardService } from './guards/guard.service';
 import { DugcService } from './guards/dugc.service';
 import { CoordinatorService } from './guards/coordinator.service';
 import { DugcRegisterComponent } from './dugc-register/dugc-register.component';
+import { AboutUsComponent } from './Navbar/about-us/about-us.component';
+import { MembersComponentComponent } from './Navbar/members-component/members-component.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 const routes: Routes = [
   { path: 'loginMain', component: DugcLoginComponent },
   { path: 'registerMain', component: DugcRegisterComponent },
+  {path:'aboutUs',component:AboutUsComponent  },
+  {path:'members-component',component:MembersComponentComponent},
+  {path:'forget-password',component:ForgotPasswordComponent},
   {
     path: 'homeMain',
     component: MainHomepageComponent,
-    canActivate: [GuardService],
+    // canActivate: [GuardService],
   },
   {
     path: 'Minor',

@@ -80,9 +80,10 @@ a {
 
 .img1 {
   transform: translateY(-3px);
-  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-  border-radius: 10px;
-  width: 49vw;
+  box-shadow: 0 5px 17px rgba(0, 0, 0, 0.35);
+  border-radius: 11px;
+  width: 55vw;
+  opacity: 85%;
 }
 
 #overlay-text {
@@ -121,4 +122,13 @@ a {
   color: #820000;
   padding: 0.5rem;
   
+}
+.pass{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.login{
+  margin-left: 10%;
+  height: 40vh;
 }

@@ -256,7 +256,7 @@ button.toast-close-button {
   display: flex;
   flex-direction: row;
   padding-bottom: 0.7em;
-  border-bottom: 0.3vh solid #C62128;
+  border-bottom: 0.4vh solid #C62128;
 }
 
 .nav-des-section {

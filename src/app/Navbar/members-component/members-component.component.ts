@@ -2,22 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-main-homepage',
-  templateUrl: './main-homepage.component.html',
-  styleUrls: ['./main-homepage.component.css']
+  selector: 'app-members-component',
+  templateUrl: './members-component.component.html',
+  styleUrls: ['./members-component.component.css']
 })
-export class MainHomepageComponent implements OnInit {
+export class MembersComponentComponent implements OnInit {
 
   constructor(private router: Router) {}
-  showLoginForm: boolean = true;
+
+  showLoginform: boolean = true;
   alert:boolean=false;
   onLoginClick() {
     
     // Perform any additional actions here (e.g., form validation)
 
     // Navigate to the main homepage component
-    this.router.navigate(['/loginMain']);
-    this.showLoginForm=false;
+    this.router.navigate(['/home']);
+    this.showLoginform=false;
     this.alert=true;
   }
 
